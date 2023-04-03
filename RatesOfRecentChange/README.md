@@ -9,7 +9,7 @@ The .txt file contains all processed data used in this study, and is saved with 
 6. **slope_tmin** rate of minimum temperature change over the entire species' extent for the years 2000-2020, with the unit °C per year
 7. **slope_tmax** rate of maximum temperature change over the entire species' extent for the years 2000-2020, with the unit °C per year
 8. **slope_fire** rate of burned area change over the entire species' extent for the years 2000-2020, with the unit % of species' extent area per year
-9. **EOO** species extent size, with the unit m^2 (to convert to km^2, divide the EOO by 1,000,000)
+9. **EOO** species extent size, with the unit m<sup>2</sup> (to convert to km<sup>2</sup>, divide the EOO by 1,000,000)
 10. **rate_urban** rate of build-up increase over the entire species' extent for the years 2000-2020, with the unit % of species' extent area per year
 11. **rate_hGFC** rate of deforestation over the entire species' extent for the years 2000-2020, with the unit % of species' extent area per year
 12. **rate_tc_change_area** rate of tree cover change over the entire species' extent for the years 2000-2020, with the unit % of species' extent area per year
