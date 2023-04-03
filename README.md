@@ -15,7 +15,7 @@ Broekman, M.J.E., Hoeks, S., Freriks, R., Langendoen, M.M., Runge, K.M., Savenco
   2.Figures.R which requires PlottingFunctions.R
   2.FiguresVennDiagram.R
   3.ChangingWindow.R
-  3.Numbers.R which produces all the numbers that are mentioned in the paper
-  4.Create.Prioritization.Lists.R
-  5.Plot.toosmallrangeSpecies.R
-  6.Plot.GlobalMap.PriorLists.R
+  4.Numbers.R which produces all the numbers that are mentioned in the paper
+  5.Create.Prioritization.Lists.R
+  6.Plot.toosmallrangeSpecies.R
+  7.Plot.GlobalMap.PriorLists.R
