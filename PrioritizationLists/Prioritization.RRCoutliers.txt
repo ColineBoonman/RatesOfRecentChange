@@ -1,0 +1,5 @@
+"ID","IUCNstatus"
+"Clusia_viscida","LC"
+"Entada_abyssinica","LC"
+"Eugenia_liberiana","EN"
+"Ocotea_acutifolia","LC"
