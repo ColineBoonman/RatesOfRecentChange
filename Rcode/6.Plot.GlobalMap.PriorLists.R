@@ -34,7 +34,7 @@ addTrans <- function(color,trans)
   if (length(color)==1 & length(trans)>1) color <- rep(color,length(trans))
   if (length(trans)==1 & length(color)>1) trans <- rep(trans,length(color))
   
-  num2hex <- function(x)
+num2hex <- function(x)
   {
     hex <- unlist(strsplit("0123456789ABCDEF",split=""))
     return(paste(hex[(x-x%%16)/16+1],hex[x%%16+1],sep=""))
@@ -45,27 +45,27 @@ addTrans <- function(color,trans)
 }
 
 
-# # GlobalPrioritizationComplete99.tif (and all other prioritization maps) - created as follows:
-# y = read.table("Prioritization99.Combined.txt",sep=",",dec=".",header=T)
-# poly = sf::read_sf("Global.polygon.shp")
-# poly$sp = NA
-# Species = gsub(" ","_",y$Species)
-# poly$sp = ifelse(poly$ID %in% Species, "Yes","No")
-# sf::st_write(poly[which(poly$sp=="Yes"),], dsn = "Global.polygon.PrioritizationComplete99.shp", driver = "ESRI Shapefile",append=F,overwrite=T)
-# #
-# poly = "Global.polygon.PrioritizationComplete99.shp"
-# tif = "GlobalPrioritizationComplete99.WaterNotRemoved.tif"
-# water.extent = "-180 -90 180 84" # <xmin> <ymin> <xmax> <ymax> # raster::raster(paste0(InputDir,"MOD44W/data/land5.tif"))
-# cmd = paste0(gdal_rasterize, ' -burn 1 -add -te ',water.extent,' -tr 0.01 0.01 -tap -co  COMPRESS=LZW "',poly,'" "',tif,'"')
-# system(cmd)
-# calc= "A+B" # all values of 255 are set to NA, rest (all 1) to 0
-# cmd = paste0(gdal_calc,# change values inside cells
-#              ' -A ','"','GlobalPrioritizationComplete99.WaterNotRemoved.tif" ',
-#              ' -B ','"','land.tif" ', # a map defining water and land surfance created with MOD44
-#              '--outfile=','"','GlobalPrioritizationComplete99.tif" ',
-#              '--calc=','"',calc,'" ')
-# system(cmd)
-
+# GlobalPrioritizationComplete95.tif (and all other prioritization maps) - created as follows:
+y = read.table("Prioritization95.Combined.txt",sep=",",dec=".",header=T)
+poly = sf::read_sf("Global.polygon.shp")
+poly$sp = NA
+Species = gsub(" ","_",y$Species)
+poly$sp = ifelse(poly$ID %in% Species, "Yes","No")
+sf::st_write(poly[which(poly$sp=="Yes"),], dsn = "Global.polygon.PrioritizationComplete95.shp", driver = "ESRI Shapefile",append=F,overwrite=T)
+#
+poly = "Global.polygon.PrioritizationComplete95.shp"
+tif = "GlobalPrioritizationComplete95.WaterNotRemoved.tif"
+water.extent = "-180 -90 180 84" # <xmin> <ymin> <xmax> <ymax> # raster::raster("land.tif") is based on MOD44W 
+cmd = paste0(gdal_rasterize, ' -burn 1 -add -te ',water.extent,' -tr 0.01 0.01 -tap -co  COMPRESS=LZW "',poly,'" "',tif,'"')
+system(cmd)
+calc= "A+B" # all values of 255 are set to NA, rest (all 1) to 0
+cmd = paste0(gdal_calc,# change values inside cells
+             ' -A ','"','GlobalPrioritizationComplete95.WaterNotRemoved.tif" ',
+             ' -B ','"','land.tif" ', # a map defining water and land surfance created with MOD44
+             '--outfile=','"','GlobalPrioritizationComplete95.tif" ',
+             '--calc=','"',calc,'" ')
+system(cmd)
+# the code above was then applied to each threat layer
 
 ###########
 ### Overlap climate and complete by different colors???

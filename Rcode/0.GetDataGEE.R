@@ -1,5 +1,5 @@
 ##########
-## Code is intelectual property from Selwyn Hoeks - https://github.com/SHoeks
+##
 
 
 

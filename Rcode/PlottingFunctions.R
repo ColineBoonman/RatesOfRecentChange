@@ -166,7 +166,7 @@ make.plots.bar.and.smoothline = function(window,data,eoo,FigureDir){
             panel.grid.major=element_blank(),
             panel.grid.minor=element_blank(),
             plot.background=element_blank())
-    
+
     p=p + geom_segment(aes(x = extreme.up5, y = 1, xend = extreme.up5, yend = 1.5),col="black", linetype=2, lwd=1)
       #geom_segment(aes(x = extreme.up1, y = 1, xend = extreme.up1, yend = 1.5),col="black", linetype=2, lwd=1)+
       
@@ -181,7 +181,7 @@ make.plots.bar.and.smoothline = function(window,data,eoo,FigureDir){
     if(str_detect(colnames(data)[idx[i]],"slope_tmin")) p = p+ labs(title="",x=bquote('Minimum Temp (°C'~year^ -1~')'), y = "Number of Species")
     if(str_detect(colnames(data)[idx[i]],"slope_tmax")) p = p+ labs(title="",x=bquote('Maximum Temp (°C'~year^ -1~')'), y = "Number of Species")
     if(str_detect(colnames(data)[idx[i]],"slope_fire")) p = p+ labs(title="",x=bquote('Burned area (%EOO'~year^ -1~')'), y = "Number of Species")
-    if(str_detect(colnames(data)[idx[i]],"rate_urban")) p = p+ labs(title="",x=bquote('Build-up exp (%EOO'~year^ -1~')'), y = "Number of Species")
+    if(str_detect(colnames(data)[idx[i]],"rate_urban")) p = p+ labs(title="",x=bquote('Built-up exp (%EOO'~year^ -1~')'), y = "Number of Species")
     if(str_detect(colnames(data)[idx[i]],"rate_cropland")) p = p+ labs(title="",x=bquote('Cropland exp (%EOO'~year^ -1~')'), y = "Number of Species")
     if(str_detect(colnames(data)[idx[i]],"rate_hGFC")) p = p+ labs(title="",x=bquote('Deforestation (%EOO'~year^ -1~')'), y = "Number of Species")
     if(str_detect(colnames(data)[idx[i]],"rate_tc_change_area")) p = p+ labs(title="",x=bquote('Tree cover decl (%EOO'~year^ -1~')'), y = "Number of Species")
