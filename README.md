@@ -16,3 +16,4 @@ Boonman, C.C.F. & Svenning, J.-C. (2023). HomeRange: A global database of mammal
   * 4.Numbers.R which produces all the numbers that are mentioned in the paper
   * 5.Create.Prioritization.Lists.R
   * 6.Plot.GlobalMap.PriorLists.R which maps all the prioritization species densities
+  * 7.RRC.too.small.sp.R which produces the numbers and figures for the seperate analysis on species with extremely small extents or species that were defined to have outlier RRC values
