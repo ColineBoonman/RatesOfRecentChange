@@ -3,7 +3,7 @@
 ### About
 The 'Rates of Recent Change' repository includes all processed data, scripts and output of this scientific paper: 
 
-Boonman, C.C.F. & Svenning, J.-C. (2023). HomeRange: A global database of mammalian home ranges. Global Ecology and Biogeography. https://doi.org/10.1111/geb.13625.
+Boonman, C.C.F.,Josep M. Serra-Diaz, Selwyn Hoeks, Wen-Yong Guo, Brian J. Enquist, Brian Maitner, Yadvinder Malhi, Cory Merow, Robert Buitenwerf, Jens-Christian Svenning, (2023). More than 17,000 tree species are at risk from rapid global change. In Review. 
 
 - Species’ extents can be downloaded as spatial polygons 
 - Rates of recent change values per threat per species can be downloaded from RatesOfRecentChange.csv
