@@ -1,0 +1,4 @@
+"species","IUCNstatus"
+"Coffea_kihansiensis","CR"
+"Frangula_inconspicua","EN"
+"Ravenea_moorei","CR"

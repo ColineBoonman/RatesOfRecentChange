@@ -1,0 +1,2 @@
+"species","IUCNstatus"
+"Quararibea_pumila","EN"
