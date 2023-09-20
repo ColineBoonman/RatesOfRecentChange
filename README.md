@@ -7,7 +7,7 @@ Boonman, C.C.F.,Josep M. Serra-Diaz, Selwyn Hoeks, Wen-Yong Guo, Brian J. Enquis
 
 - Species’ extents can be downloaded as spatial polygons - please note that water nor unsuitable climate zones are removed from these polygons
 - Rates of recent change values per threat per species can be downloaded from RatesOfRecentChange.csv
-- Candidate species for prioritization for each included threat, small range, outliers, line polygons and all combined can be downloaded from Prioritization95.txt, where the number 95 indicates the threshold used to make these list. The different lists are indicated by the name of the threat. This folder additionally contains the geographic distribution for these candidate species in the form of .tif files per threat and one for global species richness.
+- Candidate species for prioritization for each included threat, small range, outliers, line polygons and all combined can be downloaded from Prioritization95.txt, where the number 95 indicates the threshold used to make these list. The different lists are indicated by the name of the threat. The geographic distribution for these candidate species in the form of .tif files per threat and the global species richness can be requested to the corresponding author.
 - All the R code that was used to process the data and create the figures are available numbered by the order of use:
   * 0.GetDataGEE.R
   * 1.Figures.R which requires PlottingFunctions.R
