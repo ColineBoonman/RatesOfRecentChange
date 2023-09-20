@@ -1,5 +1,0 @@
-"ID","IUCNstatus"
-"Homalanthus_nutans","LC"
-"Olea_welwitschii","LC"
-"Quararibea_pumila","EN"
-"Wrightia_arborea","LC"
