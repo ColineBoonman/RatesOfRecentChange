@@ -3,7 +3,7 @@
 ### About
 The 'Rates of Recent Change' repository includes all processed data, scripts and output of this scientific paper: 
 
-Boonman, C.C.F.,Josep M. Serra-Diaz, Selwyn Hoeks, Wen-Yong Guo, Brian J. Enquist, Brian Maitner, Yadvinder Malhi, Cory Merow, Robert Buitenwerf, Jens-Christian Svenning, (2023). More than 17,000 tree species are at risk from rapid global change. In Review. 
+Boonman, C.C.F.,Josep M. Serra-Diaz, Selwyn Hoeks, Wen-Yong Guo, Brian J. Enquist, Brian Maitner, Yadvinder Malhi, Cory Merow, Robert Buitenwerf, Jens-Christian Svenning, (2023). More than 17,000 tree species are at risk from rapid global change. Nature Communications, 15(1), 166.
 
 - Species information is available as global files, where species can be found by ID. Species occurrence records can be downloaded from FigShare: https://doi.org/10.6084/m9.figshare.24168297.v1 Species’ extents can be downloaded here as spatial polygons: Global.polygon.shp - please note that waterbodies nor unsuitable climate zones are removed from these polygons. Additional species information is available in AOO.txt (area of occupancy per species) and NrOcc.txt (number of occurrences per species).
     
